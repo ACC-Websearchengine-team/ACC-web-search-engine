@@ -83,9 +83,9 @@ public class Crawler {
 		extractTextFromHTML();
 	}
 
-	public static void main(String[] args) {
-		System.out.println(System.getProperty("user.dir") + Constant.FILE_PATH);
-		spider("https://stackoverflow.com/questions/11952804/explanation-of-string-args-and-static-in-public-static-void-mainstring-a");
-	}
+//	public static void main(String[] args) {
+//		System.out.println(System.getProperty("user.dir") + Constant.FILE_PATH);
+//		spider("https://stackoverflow.com/questions/11952804/explanation-of-string-args-and-static-in-public-static-void-mainstring-a");
+//	}
 
 }
