@@ -22,12 +22,13 @@ public class Crawler {
 			visitedLinks.add(url);
 
 			// regex for web url matching
-			String pattern = "^(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]";
+			String pattern = "^(https?)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]";
 			System.out.println("\nParsing: " + pattern);
 
 			String tmpURL = "";
-			// iterate over all a and/or href tags
+			// iterate over all anchor tags with href attribute using a css selector
 			for (Element anchorTags : pageContent.select("a[href]")) {
+				// get the value of href attribute from anchor tag
 				tmpURL = anchorTags.attr("abs:href");
 				System.out.println(tmpURL);
 
