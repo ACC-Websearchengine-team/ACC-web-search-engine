@@ -96,7 +96,7 @@ public class SearchEngine {
 					//Ranking of Web Pages using merge sort 
 					//Collections.sort by default uses merge sort
 					SearchEngine.hashing(occurrs, pg);
-					Sorting.pageSort(occurrs,pg);
+					Sorting.sortWebPagesByOccurrence(occurrs,pg);
 				}	
 				System.out.println("\n\n Do you want to continue(y/n)??");
 				choice = scan.nextLine();

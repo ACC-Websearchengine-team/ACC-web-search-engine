@@ -27,8 +27,8 @@ public class Crawler {
 
 			String tmpURL = "";
 			// iterate over all a and/or href tags
-			for (Element page : pageContent.select("a[href]")) {
-				tmpURL = page.attr("abs:href");
+			for (Element anchorTags : pageContent.select("a[href]")) {
+				tmpURL = anchorTags.attr("abs:href");
 				System.out.println(tmpURL);
 
 				// anchor tage with no matching url pattern
