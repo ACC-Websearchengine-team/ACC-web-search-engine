@@ -22,7 +22,7 @@ public class Crawler {
 			visitedLinks.add(url);
 
 			// regex for web url matching
-			String pattern = "^(https?)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]";
+			String pattern = "^((https?://)|(www\\.))[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]";
 			System.out.println("\nParsing: " + pattern);
 
 			String tmpURL = "";
