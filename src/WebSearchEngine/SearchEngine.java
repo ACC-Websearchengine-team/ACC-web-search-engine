@@ -78,7 +78,7 @@ public class SearchEngine {
 				File[] fileArray = dir.listFiles();
 				for (int i = 0; i < fileArray.length; i++) {
 					// Searching the word given as an input.
-					occur = SearchWord.wordSearch(fileArray[i], p);
+					occur = SearchWord.wordSearch(p, fileArray[i]);
 					occurrs.put(fileArray[i].getName(), occur);
 					if (occur != 0)
 						pg++;
